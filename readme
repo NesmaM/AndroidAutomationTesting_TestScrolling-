@@ -2,8 +2,14 @@
 AndroidAutomationTesting_ContactsApp
 Android App testing using Appium, adb Android Studio
 
-Tools used:
+The app used in testing: https://github.com/appium-pro/TheApp/releases/tag/v1.12.0/
+  - Install the app on the emulator and write this command at terminal on mac:
+  adb shell dumpsys window displays| grep "mCurrentFocus"
+  and for windows:
+  adb shell dumpsys window | find “mCurrentFocus”
+To get the appPackage and appActivity fro the DesiredCapabilities 
 
+**Tools used:
 Eclipse IDE
 Android Studio (adb)
 Appium server
